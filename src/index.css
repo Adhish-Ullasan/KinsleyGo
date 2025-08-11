@@ -26,3 +26,22 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.primaryButton{
+    font-weight: 600;
+    font-size: 12px;
+    height: 48px;
+    width: 154px;
+    border-radius:5px;
+    background-color: var(--blue);
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+  
+
+}

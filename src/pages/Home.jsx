@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 const Home = () => {
   return (
     <div>
-      Home
+      {/* Home
       <a href="/about" style={{ display: 'block'}}>about</a>
 
-      <Link to={'/about'}>Link to about</Link>
+      <Link to={'/about'}>Link to about</Link> */}
     </div>
   )
 }

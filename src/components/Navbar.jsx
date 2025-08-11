@@ -5,19 +5,38 @@ const navBar = () => {
     return(
         <header className="container">
             <div>
-                <div>
+                <div className="logo-wrapper">
                     <img src="/kinsleylogo.png" alt="logo" />
                 </div>
                 <div className="pages">
                     <ul>
-                        <li><Link to={'/'}>Home</Link></li>
-                        <li><Link to={'/about'}>About</Link></li>
-                        <li><Link to={'/rooms'}>Rooms</Link></li>
-                        <li><Link to={'/restaurent'}>Restaurent</Link></li>
-                        <li><Link to={'/blog'}>Blog</Link></li>
-                        <li><Link to={'/shop'}>Shop</Link></li>
-                        <li><Link to={'/contact'}>Contact</Link></li>
+                        <div>
+                            <li><Link to={'/'}>Home</Link></li>
+                        </div>
+                        <div>
+                            <li><Link to={'/about'}>About</Link></li>
+                        </div>
+                        <div>
+                            <li><Link to={'/rooms'}>Rooms</Link></li>
+                        </div>
+                        <div>
+                            <li><Link to={'/restaurent'}>Restaurent</Link></li>
+                        </div>
+                        <div>
+                            <li><Link to={'/blog'}>Blog</Link></li>
+                        </div>
+                        <div>
+                            <li><Link to={'/shop'}>Shop</Link></li>
+                        </div>
+                        <div>
+                            <li><Link to={'/contact'}>Contact</Link></li>
+                        </div>
                     </ul>
+                </div>
+                <div>
+                    <button className="primaryButton" type="button">
+                        Book now
+                    </button>
                 </div>
             </div>
         </header>
