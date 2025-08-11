@@ -21,3 +21,8 @@
     --light: #f8f9fa;
     --dark: #343a40;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
