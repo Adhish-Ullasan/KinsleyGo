@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { Bookmark, Handbag } from 'lucide-react';
 
 const navBar = () => {
 
@@ -6,7 +7,7 @@ const navBar = () => {
         <header className="container">
             <div>
                 <div className="logo-wrapper">
-                    <img src="/kinsleylogo.png" alt="logo" />
+                    <img id="mainlogo" src="/kinsleylogo.png" alt="logo" />
                 </div>
                 <div className="pages">
                     <ul>
@@ -35,8 +36,11 @@ const navBar = () => {
                 </div>
                 <div>
                     <button className="primaryButton" type="button">
-                        Book now
+                           <Bookmark /> <p>Book now</p>
                     </button>
+                </div>
+                <div className="bag">
+                    <Handbag />
                 </div>
             </div>
         </header>

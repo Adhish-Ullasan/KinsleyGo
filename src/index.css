@@ -1,5 +1,5 @@
 :root {
-    --blue: #007bff;
+    --blue: #3B61DD;
     --indigo: #6610f2;
     --purple: #6f42c1;
     --pink: #e83e8c;
@@ -38,10 +38,14 @@ ul {
     font-size: 12px;
     height: 48px;
     width: 154px;
-    border-radius:5px;
+    border-radius:30px;
     background-color: var(--blue);
     color: #FFFFFF;
     border: 2px solid #FFFFFF;
   
 
+}
+
+a {
+  text-decoration: none;
 }
