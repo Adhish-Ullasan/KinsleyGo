@@ -1,14 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Banner from '../components/Banner'
 
 const Home = () => {
   return (
-    <div>
-      {/* Home
-      <a href="/about" style={{ display: 'block'}}>about</a>
-
-      <Link to={'/about'}>Link to about</Link> */}
-    </div>
+      <>
+        <Banner />
+      </>
   )
 }
 
