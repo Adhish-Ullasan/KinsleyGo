@@ -4,14 +4,16 @@ const Banner = () => {
 
     return(
         <section id="homeBanner">
-            <div>
-                <ul>
-                    <li>  <Star /></li>
-                    <li>  <Star /></li>
-                    <li>  <Star /></li>
-                    <li>  <Star /></li>
-                    <li>  <Star /></li>
-                </ul>
+            <div className='container'>
+                <div className='rating'>
+                    <ul>
+                        <li className='star'>  <Star /></li>
+                        <li className='star'>  <Star /></li>
+                        <li className='star'>  <Star /></li>
+                        <li className='star'>  <Star /></li>
+                        <li className='star'>  <Star /></li>
+                    </ul>
+                </div>
             </div>
         </section>
     )
