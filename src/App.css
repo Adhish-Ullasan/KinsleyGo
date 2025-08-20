@@ -212,3 +212,31 @@ a {
  .Features div {
   /* background-color: var(--info); */
  }
+
+
+ /* ABOUT CARD */
+ .aboutCard img {
+  max-width: 500px;
+ }
+
+ .aboutCard div:first-child {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+
+ }
+
+ .aboutCard div:last-child {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+ }
+
+ .experience {
+  flex-direction: column;
+ }
+
+ .adventure {
+  flex-direction: column;
+ }
