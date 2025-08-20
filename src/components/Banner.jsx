@@ -41,7 +41,7 @@ const Banner = () => {
                 </div>
                 <div className='Features'>
                     {
-                            featuresData.map((item)=>{<FeaturesCard data={item} />})
+                            featuresData.map((item)=><FeaturesCard data={item} />)
                     }
                 </div>
             </div>

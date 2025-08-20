@@ -1,5 +1,7 @@
 export const FeaturesCard = (props) =>{
+
     const data = props.data
+    
     return (
         <div>
             <div>

@@ -149,6 +149,7 @@ a {
 
  #homeBanner {
   background-image: url('/home/kinsleybanner.jpg');
+  padding-bottom: 3rem;
  }
 
  .Slider {
@@ -190,4 +191,24 @@ a {
 
  .welcomeQuote h1 {
   margin-bottom: 2rem;
+ }
+
+ .Features {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: aliceblue;
+  color: #000;
+  border-radius: 30px;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 2rem;
+
+ }
+
+ .Features img {
+  max-width: 40px;
+ }
+
+ .Features div {
+  /* background-color: var(--info); */
  }
