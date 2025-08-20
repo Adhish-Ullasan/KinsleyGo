@@ -172,3 +172,22 @@ a {
   height: 100%;
   border: none;
  }
+ .Scroll {
+  text-align: center;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+ }
+
+ .welcomeQuote {
+  text-align: center;
+  font-size: 50px;
+ }
+
+ .welcomeQuote  p {
+  font-size: 20px;
+  margin-bottom: 2rem;
+ }
+
+ .welcomeQuote h1 {
+  margin-bottom: 2rem;
+ }
