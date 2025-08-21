@@ -197,51 +197,63 @@ a {
   margin-bottom: 2rem;
  }
 
- .Features {
+ .features {
   display: flex;
   justify-content: space-evenly;
-  background-color: aliceblue;
+  background-color: #fff;
   color: #000;
   border-radius: 30px;
   align-items: center;
   padding: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  position: relative;
+  position: absolute;
+  width: 100%;
+  max-width: 80%;
+  left: 9%;
 
  }
 
- .Features img {
+ .features img {
   max-width: 40px;
  }
 
- .Features div {
-  /* background-color: var(--info); */
+ .features div {
+  background-color: var(--pallette);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  border-radius: 20px;
  }
 
 
  /* ABOUT CARD */
+
+ #about {
+  background-color: var(--pallette);
+  padding-top: 150px;
+  padding-bottom: 50px;
+ }
  .aboutCard img {
-  max-width: 500px;
+  max-width: 600px;
  }
 
- .aboutCard div:first-child {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-
+ .aboutCard {
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #fff;
  }
 
- .aboutCard div:last-child {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1rem;
- }
-
- .experience {
-  flex-direction: column;
+ .experience  {
+    padding-left: 2rem;
  }
 
  .adventure {
-  flex-direction: column;
+  padding-left: 2rem;
+ }
+
+ .aboutCard h3 {
+  font-size: 40px;
  }
 

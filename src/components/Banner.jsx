@@ -39,7 +39,7 @@ const Banner = () => {
                 <div className='Scroll'>
                     <p>Scroll Down</p>
                 </div>
-                <div className='Features'>
+                <div className='features'>
                     {
                             featuresData.map((item)=><FeaturesCard data={item} />)
                     }
