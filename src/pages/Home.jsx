@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Banner from '../components/Banner'
 import AboutCard from '../components/AboutCard'
+import Places from '../components/Places'
 
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
       <>
         <Banner />
         <AboutCard/>
+        <Places/>
       </>
   )
 }
