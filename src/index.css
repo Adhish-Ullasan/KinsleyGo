@@ -49,3 +49,16 @@ ul {
 a {
   text-decoration: none;
 }
+
+@font-face {
+  font-family: 'kinsleyfont';
+  src: url('/fonts/Jost-VariableFont_wght.ttf');
+}
+
+body {
+  font-family: 'kinsleyfont',serif;
+}
+
+h1 {
+  color: #f8f9fa;
+}

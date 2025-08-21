@@ -152,6 +152,10 @@ a {
   padding-bottom: 3rem;
  }
 
+ .welcomeQuote p {
+  color: #fff;
+ }
+
  .Slider {
   display: flex;
   justify-content: space-around;
@@ -240,3 +244,4 @@ a {
  .adventure {
   flex-direction: column;
  }
+
