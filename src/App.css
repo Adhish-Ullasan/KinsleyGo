@@ -281,4 +281,38 @@ a {
   font-size: 50px;
  }
 
+ .sliderButton {
+  display: flex;
+  justify-content: flex-end;
+  /* gap: 2rem; */
+  margin-bottom: 2rem;
+ }
 
+ .sliderButton button {
+  padding: .5rem;
+  border-radius: 50p
+  /* border-right: none; */
+ }
+
+ #placeImg {
+  max-width: 400px;
+  min-height: 300px;
+ }
+
+ #backButton {
+  border-right: none;
+ }
+
+ #nextButton {
+  border-left: none;
+ }
+
+ .btn-wrapper {
+  background-color: red;
+  border-radius: 40px;
+ }
+
+ .btn-wrapper button {
+  background: none !important;
+  border: none;
+ }
