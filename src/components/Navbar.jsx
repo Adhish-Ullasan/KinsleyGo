@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { Bookmark, Handbag } from 'lucide-react';
 
-const navBar = () => {
+const Navbar = () => {
 
     return(
         <header>
@@ -47,5 +47,4 @@ const navBar = () => {
     )
 }
 
-export default navBar
-
+export default Navbar

@@ -10,6 +10,10 @@ import Blog from './pages/Blog'
 import Shop from './pages/Shop'
 import Contact from './pages/Contact'
 import Footer from './components/Footer'
+import Login from './pages/admin/Login'
+import AdminDashboard from './pages/admin/AdminDashboard'
+import AdminLayout from './components/layout/AdminLayout'
+import UserLayout from './components/layout/UserLayout'
 // import { Contact } from 'lucide-react'
 
 function App() {
@@ -17,17 +21,23 @@ function App() {
 
   return (
     <BrowserRouter>
-    <Navbar />
+    {/* <Navbar /> */}
       <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/About' element={<About/>} />
-        <Route path='/Rooms' element={<Rooms/>} />
-        <Route path='/Restaurent' element={<Restaurent/>} />
-        <Route path='/Blog' element={<Blog/>} />
-        <Route path='/Shop' element={<Shop/>} />
-        <Route path='/Contact' element={<Contact/>} />
+        <Route element={<AdminLayout />} >
+          <Route path="/login" element={<Login />} />
+          <Route path="/dashboard" element={<AdminDashboard />} /> 
+        </Route>
+        <Route element={<UserLayout />}>
+          <Route path='/' element={<Home/>} />
+          <Route path='/about' element={<About/>} />
+          <Route path='/rooms' element={<Rooms/>} />
+          <Route path='/restaurent' element={<Restaurent/>} />
+          <Route path='/blog' element={<Blog/>} />
+          <Route path='/shop' element={<Shop/>} />
+          <Route path='/contact' element={<Contact/>} />
+        </Route>
       </Routes>
-    <Footer />
+    {/* <Footer /> */}
     </BrowserRouter>
   )
 }
