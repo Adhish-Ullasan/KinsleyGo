@@ -9,7 +9,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-.login-container {
+body{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,9 +146,10 @@
 
 .box form .inputBox input:valid ~ span,
 .box form .inputBox input:focus ~ span {
-    color: #fff;
+    color: black;
     font-size: 0.75em;
     transform: translateY((-34px));
+    padding-left: .5rem;
 }
 
 .box form .inputBox i{
@@ -162,6 +163,8 @@
     overflow: hidden;
     transition: 0.5s;
     pointer-events: none;
+    z-index: -1;
+
 }
 
 .box form .inputBox input:valid ~ i,
@@ -201,8 +204,6 @@
 #submit:active{
     opacity: 0.8;
 }
-
-
 
 /* HEADER */
 
