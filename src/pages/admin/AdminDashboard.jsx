@@ -2,8 +2,7 @@ import React from 'react'
 
 const AdminDashboard = () => {
   return (
-    <div>
-      <p>Dashboard</p>  
+    <div>  
     </div>
   )
 }

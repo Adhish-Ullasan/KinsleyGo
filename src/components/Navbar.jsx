@@ -4,7 +4,7 @@ import { Bookmark, Handbag } from 'lucide-react';
 const Navbar = () => {
 
     return(
-        <header>
+        <header id="userHeader">
             <div>
                 <div className="logo-wrapper">
                     <img id="mainlogo" src="/kinsleylogo.png" alt="logo" />

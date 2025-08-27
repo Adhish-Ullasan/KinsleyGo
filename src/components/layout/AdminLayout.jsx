@@ -1,18 +1,12 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
+import MiniDrawer from '../admin/AppbarandDrawer'
 
 const AdminLayout = () => {
   return (
-
-      <>
-    <p>navbar</p>
-    <p>sidebar</p>
-    <main >
-      <div >
-        <Outlet /> 
-      </div>
-    </main>
-  </>
+    <>
+    <MiniDrawer />
+    </>
   )
 }
 
