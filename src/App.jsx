@@ -23,8 +23,8 @@ function App() {
     <BrowserRouter>
     {/* <Navbar /> */}
       <Routes>
+        <Route path="/login" element={<Login />} />
         <Route element={<AdminLayout />} >
-          <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<AdminDashboard />} /> 
         </Route>
         <Route element={<UserLayout />}>
