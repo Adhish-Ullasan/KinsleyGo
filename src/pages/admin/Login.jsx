@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Login = () => {
+
   return (
     <div className='login-container'>
         <div className="box">
@@ -8,13 +9,13 @@ const Login = () => {
             <form action="">
             <h2>Sign in</h2>
             <div className="inputBox">
-            <input type="text" required="" />
-            <span>Username</span>
+            <input type="text" required="" placeholder='Email'/>
+            {/* <span>Username</span> */}
             <i />
             </div>
             <div className="inputBox">
-                <input type="password" required="" />
-                <span>Password</span>
+                <input type="password" required="" placeholder='Password' />
+                {/* <span>Password</span> */}
                 <i />
             </div>
             <div className="links">

@@ -14,6 +14,7 @@ import Login from './pages/admin/Login'
 import AdminDashboard from './pages/admin/AdminDashboard'
 import AdminLayout from './components/layout/AdminLayout'
 import UserLayout from './components/layout/UserLayout'
+// import { Toaster } from 'react-hot-toast'
 // import { Contact } from 'lucide-react'
 
 function App() {
