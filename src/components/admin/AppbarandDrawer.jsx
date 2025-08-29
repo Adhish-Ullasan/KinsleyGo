@@ -19,6 +19,12 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import { Outlet } from 'react-router-dom';
+import { navigations } from '../../data/adminNavigation';
+import HomeIcon from '@mui/icons-material/Home';
+import PermIdentityIcon from '@mui/icons-material/PermIdentity';
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
+import PaymentIcon from '@mui/icons-material/Payment';
+import FaceIcon from '@mui/icons-material/Face';
 
 const drawerWidth = 240;
 
@@ -112,6 +118,14 @@ export default function MiniDrawer() {
     setOpen(false);
   };
 
+  const icons = {
+    dashboard: <HomeIcon/>,
+    bookings: <PermIdentityIcon/>,
+    rooms: <PeopleAltIcon/>,
+    payments:<PaymentIcon/>,
+    customer:<FaceIcon/>
+  }
+
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
@@ -144,8 +158,8 @@ export default function MiniDrawer() {
         </DrawerHeader>
         <Divider />
         <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem key={text} disablePadding sx={{ display: 'block' }}>
+          {navigations.map((navItem, index) => (
+            <ListItem key={index} disablePadding sx={{ display: 'block' }} >
               <ListItemButton
                 sx={[
                   {
@@ -176,10 +190,12 @@ export default function MiniDrawer() {
                         },
                   ]}
                 >
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  {
+                   icons[navItem.icon]
+                  }
                 </ListItemIcon>
                 <ListItemText
-                  primary={text}
+                  primary={navItem.name}
                   sx={[
                     open
                       ? {
@@ -195,8 +211,8 @@ export default function MiniDrawer() {
           ))}
         </List>
         <Divider />
-        <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
+        {/* <List>
+          {['Customer Details', 'Settings', 'Spam'].map((text, index) => (
             <ListItem key={text} disablePadding sx={{ display: 'block' }}>
               <ListItemButton
                 sx={[
@@ -245,7 +261,7 @@ export default function MiniDrawer() {
               </ListItemButton>
             </ListItem>
           ))}
-        </List>
+        </List> */}
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
