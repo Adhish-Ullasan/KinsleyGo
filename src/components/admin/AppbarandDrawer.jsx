@@ -210,7 +210,7 @@ export default function MiniDrawer() {
             </ListItem>
           ))}
         </List>
-        <Divider />
+        {/* <Divider /> */}
         {/* <List>
           {['Customer Details', 'Settings', 'Spam'].map((text, index) => (
             <ListItem key={text} disablePadding sx={{ display: 'block' }}>
